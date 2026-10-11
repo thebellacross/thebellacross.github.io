@@ -1,0 +1,14 @@
+node_modules/
+.pnpm-store/
+dist/
+.DS_Store
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+.codex/
+.agents/
+artifacts/

@@ -1,0 +1,23 @@
+:root {
+  color-scheme: dark;
+  --canvas: #060606;
+  --stage: #0c0c0c;
+  --ink: #e3dfd5;
+  --muted: #92908a;
+  --subtle: #66645f;
+  --line: #30302d;
+  --copper: #d57a50;
+  --red: #d54f36;
+  --media-background: #110d0b;
+  --stage-glow: #1a131012;
+  --audio-glow: #3d2118;
+  --display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --frame-inset: 22px;
+  --stage-padding: 48px;
+  --footer-height: 52px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --pointer-x: 0px;
+  --pointer-y: 0px;
+}

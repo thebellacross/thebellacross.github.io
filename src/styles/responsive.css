@@ -1,0 +1,76 @@
+@media (min-width: 1800px) {
+  :root { --stage-padding: 65px; --frame-inset: 32px; }
+  .wordmark { font-size: 10.8vw; }
+}
+@media (max-width: 1100px) {
+  :root { --stage-padding: 32px; --frame-inset: 16px; }
+  .scene-nav { gap: 20px; }
+  .scene-nav > button { font-size: 10px; gap: 8px; }
+  .detail-content { left: 63%; right: 5%; }
+}
+@media (max-width: 700px) {
+  :root { --stage-padding: 20px; --frame-inset: 10px; --footer-height: 90px; }
+  .wordmark { top: 9%; left: 16px; font-size: 12vw; letter-spacing: -.071em; }
+  .frame-open { font-size: 17px; right: 10px; bottom: 8px; }
+  .carousel-slot--center { left: 25%; top: 29%; width: 60%; height: 34%; }
+  .carousel-slot--left { left: 7%; top: 41%; width: 24%; height: 19%; }
+  .carousel-slot--right { left: 83%; top: 56%; width: 14%; height: 14%; }
+  .scene-title-block { bottom: calc(var(--footer-height) + 34px); max-width: calc(100% - var(--stage-padding) * 2); }
+  .scene-title-block h2 { font-size: clamp(28px, 8.6vw, 50px); }
+  .scene--performance .scene-title-block h2 { font-size: clamp(25px, 7.2vw, 42px); }
+  .stage-footer { flex-direction: column; align-items: stretch; }
+  .scene-nav { display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 12px; height: 52px; }
+  .scene-nav > button { display: grid; grid-template-columns: 12px 1fr; gap: 5px; align-items: center; }
+  .nav-title { font-size: 9px; line-height: 1.35; }
+  .nav-number { font-size: 8px; }
+  .scene-arrows { height: 38px; gap: 12px; }
+  .scene-arrows button { font-size: 19px; width: 28px; padding: 8px 2px; }
+  .dialog-topline { top: 15px; }
+  .text-control { font-size: 9px; gap: 10px; }
+  .detail-art { top: 12%; left: 20px; right: 20px; width: auto; height: 34%; bottom: auto; }
+  .detail-content { top: 50%; left: 20px; right: 20px; bottom: 9%; padding-right: 8px; }
+  .detail-content h2 { font-size: 37px; margin: 11px 0 10px; }
+  .detail-description { font-size: 11px; line-height: 1.75; margin: 16px 0; max-width: none; }
+  .detail-content dl { margin: 18px 0; }
+  .detail-content dl > div { padding: 8px 0; }
+  .detail-footer { height: 45px; }
+  .project-detail--media-only .detail-art { top: 15%; left: 20px; right: 20px; width: auto; height: 53%; bottom: auto; }
+  .project-detail--media-only .detail-content { top: auto; bottom: 15%; left: 20px; right: 20px; width: auto; }
+  .project-detail--media-only .detail-content h2 { font-size: clamp(28px, 8.6vw, 42px); }
+}
+@media (max-height: 680px) and (max-width: 700px) and (orientation: portrait) {
+  .wordmark { top: 10%; }
+  .carousel-slot--center { top: 29%; height: 31%; }
+  .carousel-slot--left { top: 39%; height: 18%; }
+  .carousel-slot--right { top: 54%; height: 12%; }
+  .scene-title-block h2 { font-size: 28px; }
+  .scene--performance .scene-title-block h2 { font-size: 25px; }
+}
+@media (max-height: 650px) and (min-width: 701px) {
+  :root { --footer-height: 44px; }
+  .wordmark { top: 9%; font-size: min(10.6vw, 20vh); }
+  .scene-title-block { bottom: calc(var(--footer-height) + 24px); }
+  .scene-title-block h2, .scene--performance .scene-title-block h2 { font-size: 30px; }
+  .detail-content { top: 17%; }
+}
+@media (max-height: 460px) and (orientation: landscape) {
+  :root { --footer-height: 44px; }
+  .wordmark { top: 8%; font-size: min(11vw, 18vh); }
+  .scene-title-block { bottom: calc(var(--footer-height) + 20px); max-width: 80%; }
+  .scene-title-block h2, .scene--performance .scene-title-block h2 { font-size: 26px; }
+  .carousel-slot--center { left: 43%; top: 29%; width: 43%; height: 36%; }
+  .carousel-slot--left { left: 11.8%; top: 36%; width: 22%; height: 25%; }
+  .carousel-slot--right { left: 87%; top: 50%; width: 10.5%; height: 20%; }
+  .stage-footer { flex-direction: row; align-items: center; }
+  .scene-nav { display: flex; height: auto; gap: 15px; }
+  .scene-nav > button { display: flex; gap: 6px; }
+  .nav-title { font-size: 9px; white-space: nowrap; }
+  .scene-arrows { height: auto; gap: 8px; }
+  .scene-arrows button { width: 24px; font-size: 18px; }
+  .detail-footer { height: 40px; }
+  .detail-art { top: 20%; bottom: 17%; height: auto; }
+  .detail-content { top: 20%; bottom: 17%; }
+  .project-detail--media-only .detail-art { top: 13%; bottom: 25%; height: auto; left: 25%; width: 65%; }
+  .project-detail--media-only .detail-content { top: auto; bottom: 18%; left: var(--stage-padding); width: 70%; }
+  .project-detail--media-only .detail-content h2 { font-size: 26px; }
+}

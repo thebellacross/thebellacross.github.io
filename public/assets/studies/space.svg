@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+    <title>Original procedural visual study — placeholder, not BELLACROSS project media</title>
+    <defs>
+  <radialGradient id="ambient"><stop stop-color="#582519" stop-opacity=".38"/><stop offset="1" stop-color="#090909" stop-opacity="0"/></radialGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3d160d"/><stop offset=".32" stop-color="#d98751"/><stop offset=".52" stop-color="#f1b17b"/><stop offset=".7" stop-color="#7d351e"/><stop offset="1" stop-color="#20100b"/></linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2=".9" y2=".6"><stop stop-color="#22110b"/><stop offset=".28" stop-color="#db8759"/><stop offset=".43" stop-color="#f0b38a"/><stop offset=".61" stop-color="#9b4626"/><stop offset="1" stop-color="#170b07"/></linearGradient>
+  <linearGradient id="warm"><stop stop-color="#0b0908"/><stop offset=".42" stop-color="#6b2c19"/><stop offset=".73" stop-color="#c98250"/><stop offset="1" stop-color="#2e150e"/></linearGradient>
+  <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#120807" stop-opacity="0"/><stop offset=".55" stop-color="#bc3920" stop-opacity=".55"/><stop offset="1" stop-color="#f5a35d"/></linearGradient>
+  <radialGradient id="disc"><stop stop-color="#080807"/><stop offset=".16" stop-color="#080807"/><stop offset=".18" stop-color="#db9463"/><stop offset=".21" stop-color="#291c16"/><stop offset=".74" stop-color="#422419"/><stop offset=".95" stop-color="#a5653e"/><stop offset="1" stop-color="#16100c"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs><rect width="1200" height="800" fill="#0b0908"/><rect width="1200" height="800" fill="#17130f"/>
+<path d="M0 0H1200V180L890 440H320L0 165Z" fill="#211910"/>
+<path d="M0 800V170L320 440V800Z" fill="#0c0b09"/>
+<path d="M1200 800V180L890 440V800Z" fill="#39271a"/>
+<path d="M320 440H890V800H320Z" fill="url(#warm)"/>
+<path d="M440 120H840V650H440Z" fill="#090908"/>
+<path d="M440 120H478V650H440Z" fill="#925334"/>
+<path d="M478 159H807V650H478Z" fill="url(#warm)"/>
+<path d="M515 205H765V650H515Z" fill="#17120e"/>
+<path d="M568 263H739V650H568Z" fill="#070707"/>
+<path d="M739 263H765V650H739Z" fill="#b57846"/>
+<path d="M440 650H840L1200 800H0Z" fill="#22170f"/>
+<path d="M568 650H739L994 800H595Z" fill="url(#warm)" opacity=".72"/>
+<path d="M568 263H576V650H568Z" fill="#ba8454" opacity=".55"/>
+<path d="M840 120V650L1044 800H1150L920 640V40Z" fill="#100f0c"/>
+<path d="M300 0V800M920 0V640" stroke="#e0a36f" opacity=".12"/>
+<path d="M0 740H1200" stroke="#a0744d" opacity=".17"/>
+    <rect width="1200" height="800" filter="url(#grain)" opacity=".043" style="mix-blend-mode:soft-light"/>
+    </svg>
