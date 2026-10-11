@@ -6,6 +6,9 @@ export type ArchiveImage = {
   fit?: 'contain' | 'cover'
 }
 
+export type ArchiveParagraph = { text: string; translationZh?: string }
+export type ArchiveSelection = { title: string; titleZh?: string; items: string[] }
+
 export type MusicProductionChapter = {
   id: string
   title: string
@@ -18,8 +21,9 @@ export type MusicProductionChapter = {
   releaseDate?: string
   credits?: { label: string; value: string }[]
   description: string
-  paragraphs?: string[]
-  selection?: { title: string; items: string[] } | { title: string; items: string[] }[]
+  descriptionZh?: string
+  paragraphs?: ArchiveParagraph[]
+  selection?: ArchiveSelection | ArchiveSelection[]
   note?: string
   tracks?: string[]
   images: ArchiveImage[]
@@ -57,6 +61,7 @@ export const musicProduction: ArchiveContent = {
       title: 'Music Production',
       introduction: true,
       description: 'BELLACROSS creates electronic music across vinyl and digital releases. Explore selected productions, recordings, and press features.',
+      descriptionZh: 'BELLACROSS 创作电子音乐，作品以黑胶唱片及数字形式发行。这里展示部分音乐作品、录音及媒体报道。',
       images: [{
         src: asset('b25811b3-5a37-4fad-a23e-b98a05161ee6.jpg'),
         alt: 'Black-and-white portrait of BELLACROSS holding a vinyl record and its sleeve.',
@@ -77,6 +82,7 @@ export const musicProduction: ArchiveContent = {
       format: '12-inch vinyl compilation',
       credits: [{ label: 'BELLACROSS track', value: 'Char' }],
       description: 'Char, by BELLACROSS, appears on Sounds of China 2019, a vinyl compilation released by House of China.',
+      descriptionZh: 'BELLACROSS 的作品《Char》收录于荷兰厂牌 House of China 于 2019 年发行的黑胶合辑《Sounds of China 2019》。',
       images: [{
         src: asset('WechatIMG905 3.JPG'),
         alt: 'Full Sounds of China 2019 sleeve spread, including Side A and Side B listings and the BELLACROSS track Char.',
@@ -89,6 +95,7 @@ export const musicProduction: ArchiveContent = {
       title: "That's Arts & Life: BELLACROSS",
       publication: "That's Magazine",
       description: "A feature on BELLACROSS published in That's Arts & Life.",
+      descriptionZh: "That's 杂志 Arts & Life 栏目刊登的 BELLACROSS 专题报道。",
       images: [
         {
           src: asset('DSCF1191.JPG'),
@@ -110,6 +117,7 @@ export const musicProduction: ArchiveContent = {
       releaseDate: 'September 6, 2020',
       format: 'Digital EP',
       description: 'A three-track EP by BELLACROSS, released through Welter Records in September 2020.',
+      descriptionZh: 'BELLACROSS 于 2020 年 9 月通过罗马尼亚厂牌 Welter Records 发行的三曲 EP（迷你专辑）。',
       tracks: ['If', 'Tomorrow Is Promised To No One', 'Where Are The Dreams Go When We Wake Up'],
       images: [{
         src: asset('bellacross welter152.jpg'),

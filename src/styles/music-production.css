@@ -46,6 +46,9 @@
 .chapter-details dt { color: var(--muted); font: 9px/1.9 var(--mono); }
 .chapter-details dd { margin: 0; }
 .chapter-description { font-size: 14px; line-height: 1.8; color: var(--muted); margin: 0; max-width: 43ch; }
+.chapter-translation, .chapter-selection-translation { font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', var(--display); }
+.chapter-translation { font-size: 13px; line-height: 1.85; color: var(--muted); margin: 10px 0 0; max-width: 43ch; }
+.chapter-selection-translation { font-size: 11px; }
 .chapter-tracks { margin: 25px 0 0; padding-left: 22px; font-size: 13px; line-height: 1.65; max-width: 42ch; }
 .chapter-tracks li { padding: 4px 0 4px 8px; }
 .chapter-tracks li::marker { font: 9px var(--mono); color: var(--copper); }
@@ -57,6 +60,7 @@
 .chapter-information[data-scroll-content]:focus-visible { outline: 1px solid var(--line); outline-offset: 3px; }
 .production-detail--single .chapter-information h2 { margin-bottom: 24px; }
 .production-detail--single .chapter-description { font-size: 12px; line-height: 1.8; max-width: none; }
+.production-detail--single .chapter-translation { font-size: 12px; max-width: none; }
 .chapter-copy { margin-top: 18px; }
 .chapter-selection { margin-top: 26px; }
 .chapter-selection h3 { margin: 0 0 12px; font: 9px/1.8 var(--mono); color: var(--ink); }

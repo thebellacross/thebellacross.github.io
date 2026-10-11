@@ -21,9 +21,14 @@ export const djPerformance: ArchiveContent = {
     id: 'dj-performance',
     title: 'DJ Performance',
     description: 'BELLACROSS performs as a DJ across luxury hotels, lounges, rooftop bars, clubs, and events, adapting musical selection to the venue, time of day, and audience.',
-    paragraphs: ['Timing, crowd reading, and spatial awareness guide each set. Experience in premium venues informs a measured presence, balancing musical taste with the rhythm of a room to shape mood across an evening.'],
+    descriptionZh: 'BELLACROSS 的 DJ 演出涵盖五星级酒店、酒廊、屋顶酒吧、俱乐部及各类活动现场，并根据场所氛围、不同时段与听众特点调整音乐选择。',
+    paragraphs: [{
+      text: 'Timing, crowd reading, and spatial awareness guide each set. Experience in premium venues informs a measured presence, balancing musical taste with the rhythm of a room to shape mood across an evening.',
+      translationZh: 'BELLACROSS 注重音乐的节奏与层次、现场听众的反应及空间氛围，根据现场状态调整曲目选择与音乐的推进节奏，营造自然、连贯且契合场所特点的音乐体验。',
+    }],
     selection: [{
       title: 'Selected Residencies',
+      titleZh: '驻场',
       items: [
         'The Ritz-Carlton Chengdu / FLAIR',
         'Fairmont Hotel Chengdu / CUBE & Manhattan',
@@ -62,9 +67,14 @@ export const musicCuration: ArchiveContent = {
     id: 'music-curation',
     title: 'Music Curation',
     description: 'BELLACROSS develops music curation for hospitality and lifestyle spaces, shaping atmosphere through careful selection, daypart sensitivity, and spatial listening.',
-    paragraphs: ['The work includes background music programming, time-of-day playlists, and ongoing library updates. Musical tone responds to guest profiles, venue identity, and service rhythm across hotels, restaurants, bars, lounges, and retail environments.'],
+    descriptionZh: 'BELLACROSS 为酒店及生活方式空间提供音乐策划，通过精心的音乐选择、对不同时段的把握及对空间环境的理解，塑造符合场所特质的音乐氛围。',
+    paragraphs: [{
+      text: 'The work includes background music programming, time-of-day playlists, and ongoing library updates. Musical tone responds to guest profiles, venue identity, and service rhythm across hotels, restaurants, bars, lounges, and retail environments.',
+      translationZh: '工作内容涵盖背景音乐编排、不同时段的播放方案及曲库的持续更新。根据宾客群体、场所定位和服务节奏，调整酒店、餐厅、酒吧、酒廊及零售空间的音乐风格与整体氛围。',
+    }],
     selection: {
       title: 'Selected Spaces',
+      titleZh: '合作空间',
       items: [
         "Abbye, GRAPPA'S / Taikoo Li Restaurants, Chengdu",
         'Adidas store / Taikoo Li Chengdu',

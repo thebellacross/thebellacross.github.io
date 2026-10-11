@@ -98,6 +98,10 @@ Edit **`src/data/sceneDetails.ts`** for the two unified galleries. `description`
 `selection` (`title` / `items`), and `note` control the editorial information. The copy uses the
 supplied experience and venue list, without dates, awards, or invented event details.
 
+Selected translations are optional: `descriptionZh` follows the chapter description;
+each additional `paragraphs` entry pairs its English `text` with `translationZh`.
+Selection headings can include `titleZh`. Only explicitly supplied translations render.
+
 DJ Performance uses all seven supplied images, with `1-p.jpg`, `2.JPG`, and `3.jpg` first.
 Music Curation uses all nine supplied images in the order listed in the brief. Assets live in
 **`public/assets/images/dj-performance/`** and **`public/assets/images/music-curation/`**.

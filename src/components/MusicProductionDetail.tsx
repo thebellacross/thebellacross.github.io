@@ -3,9 +3,16 @@ import type { CSSProperties } from 'react'
 import { createPortal } from 'react-dom'
 import { gsap } from 'gsap'
 import { musicProduction } from '../data/musicProduction'
-import type { ArchiveContent, ArchiveImage, MusicProductionChapter } from '../data/musicProduction'
+import type { ArchiveContent, ArchiveImage, ArchiveParagraph, MusicProductionChapter } from '../data/musicProduction'
 import { useProductionScroll } from '../motion/useProductionScroll'
 import { FocusDialog } from './FocusDialog'
+
+function ChapterParagraph({ text, translationZh, additional = false }: ArchiveParagraph & { additional?: boolean }) {
+  return <>
+    <p className={`chapter-description${additional ? ' chapter-copy' : ''}`}>{text}</p>
+    {translationZh && <p className="chapter-translation" lang="zh-Hans">{translationZh}</p>}
+  </>
+}
 
 function ChapterInformation({ chapter }: { chapter: MusicProductionChapter }) {
   const selections = Array.isArray(chapter.selection) ? chapter.selection : chapter.selection ? [chapter.selection] : []
@@ -25,10 +32,10 @@ function ChapterInformation({ chapter }: { chapter: MusicProductionChapter }) {
     {!!details.length && <dl className="chapter-details">{details.map(detail =>
       <div key={detail.label}><dt>{detail.label}</dt><dd>{detail.value}</dd></div>
     )}</dl>}
-    <p className="chapter-description">{chapter.description}</p>
-    {chapter.paragraphs?.map(paragraph => <p key={paragraph} className="chapter-description chapter-copy">{paragraph}</p>)}
+    <ChapterParagraph text={chapter.description} translationZh={chapter.descriptionZh} />
+    {chapter.paragraphs?.map(paragraph => <ChapterParagraph key={paragraph.text} {...paragraph} additional />)}
     {selections.map(selection => <div key={selection.title} className="chapter-selection">
-      <h3>{selection.title}</h3>
+      <h3>{selection.title}{selection.titleZh && <> / <span className="chapter-selection-translation" lang="zh-Hans">{selection.titleZh}</span></>}</h3>
       <ul>{selection.items.map(item => <li key={item}>{item}</li>)}</ul>
     </div>)}
     {chapter.note && <p className="chapter-description chapter-note">{chapter.note}</p>}
